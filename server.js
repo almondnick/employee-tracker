@@ -10,10 +10,10 @@ const db = mysql.createConnection (
         user: 'root',
         password: 'LargoGumbo69!',
         database: 'business_db'
-    },
+    }
 );
 
-// Message displayed when connection successful
+// Message displayed when connection is successful
 console.log('WELCOME TO THE EMPLOYEE DATABASE!');
 
 // Init function to prompt user with database query options
@@ -52,37 +52,37 @@ function init() {
                     break;
                 case 'Exit':
                     process.exit();
-            };
+            }
         })
 };
 
 // Query functions depending on user selection
 function viewEmployees() {
 
-}
+};
 
 function viewDepartments() {
 
-}
+};
 
 function viewRoles() {
 
-}
+};
 
 function addEmployee() {
 
-}
+};
 
 function addDepartment() {
 
-}
+};
 
 function addRole() {
 
-}
+};
 
 function updateRole() {
 
-}
+};
 
 init();
