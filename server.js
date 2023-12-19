@@ -1,17 +1,22 @@
+// Imports
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
 
+// Connect to MySQL
 const db = mysql.createConnection (
     {
         host: 'localhost',
+        port: '3306',
         user: 'root',
         password: 'LargoGumbo69!',
-        database: 'employees_db'
+        database: 'business_db'
     },
 );
 
-console.log('WELCOME TO THE EMPLOYEE DATABASE');
+// Message displayed when connection successful
+console.log('WELCOME TO THE EMPLOYEE DATABASE!');
 
+// Init function to prompt user with database query options
 function init() {
     inquirer
         .prompt([
@@ -19,8 +24,7 @@ function init() {
                 type: 'list',
                 message: 'What would you like to do?',
                 name: 'dropdown',
-                choices: ['View All Employees', 'View All Departments', 'View All Roles',
-                'Add an Employee', 'Add a Department', 'Add a Role', 'Update Employee Role', 'Exit'],
+                choices: ['View All Employees', 'View All Departments', 'View All Roles', 'Add an Employee', 'Add a Department', 'Add a Role', 'Update Employee Role', 'Exit'],
             }
         ])
         .then((answer) => {
@@ -52,6 +56,7 @@ function init() {
         })
 };
 
+// Query functions depending on user selection
 function viewEmployees() {
 
 }
@@ -80,3 +85,4 @@ function updateRole() {
 
 }
 
+init();
