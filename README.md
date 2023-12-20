@@ -14,6 +14,7 @@ Run npm start to start the program and you will be prompted with a list of optio
 
 ## Demo and Links
 
+![Untitled_ Dec 20, 2023 2_38 PM](https://github.com/almondnick/employee-tracker/assets/143033339/a1ecbc6a-1e14-4b1c-9eaa-7733dd5a525c)
 
 
 ## Credits
